@@ -1,0 +1,132 @@
+*{
+    background: #F3F5FC;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 400;
+    font-size: 30px;
+    line-height: 80%;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #B7CCD6;
+    display: flex;
+    align-items:center;
+}
+
+.header h1{
+    margin: 10px;
+    color: #0A3871; 
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #B7CCD6;
+}
+
+.logo{
+    margin-left: 15px;
+    width: 10%;
+    background-color: #B7CCD6;
+}
+
+main{
+    display: flex; /*juntar los dos cuadros -responsive*/
+    background-color: #CFD1D1;
+    padding: 1em 50px;
+}
+
+.captura{
+    margin: 50px 50px;
+}
+
+.text-area {
+    width: 95%;
+    height: 15%;
+    margin: 0 0 5%;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    resize: none;
+    text-transform: lowercase;
+}
+
+::placeholder{ color: #0A3871; }
+    .text-area:focus{
+        outline: none;  
+    }
+
+.mensaje{ 
+    background: white;
+    background-image: url("imagenes/munheco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 15px;
+    color: #0A3871;
+    margin-left: 50px;
+    margin-top: 2px;
+    padding-left: 50px;
+    position: fixed;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.aviso{
+    display: flex;
+    color: #0A3871;
+    font-size: medium;
+}
+
+.botones{
+    display: flex; /*posicionar al lado*/
+    margin-top: 30px;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8; 
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 30px;
+    width: 250px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    height: 60px;
+    width: 250px;
+}
+
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 376px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    color: #474747;
+    background-color: white;
+    padding: 5px;
+}
+
+footer p{
+    padding: 8px;
+}
