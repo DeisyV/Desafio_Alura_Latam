@@ -42,9 +42,11 @@ function desencriptar(stringDesencriptada){
 }
 
 
-/*function btncopiar(){
-    const textoEncriptado = copiar(textArea.value);
+function btncopiar(){
+    //document.getElementById("txtMsnDesencriptado").select;
+    navigator.clipboard.writeText(document.getElementById("txtMsnDesencriptado").value);
+    const textoEncriptado = desencriptar(textArea.value);
     mensaje.value = textoEncriptado;
-    
-}*/
+    textArea.value = "";
+}
 

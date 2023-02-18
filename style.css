@@ -1,37 +1,38 @@
-*{
-    background: #F3F5FC;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: 400;
-    font-size: 30px;
-    line-height: 80%;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    height:100%;
 }
 
-.header{
+header{
     width: 100%;
-    height: 70px;
     background-color: #B7CCD6;
     display: flex;
     align-items:center;
 }
 
-.header h1{
+.header h1 {
+    height: 100%;
     margin: 10px;
-    color: #0A3871; 
+    color: #0A3871;
     font-size: 25px;
     font-weight: bold;
     background-color: #B7CCD6;
 }
 
 .logo{
-    margin-left: 15px;
-    width: 10%;
+    margin-left: 50px;
+    width: 5%;
     background-color: #B7CCD6;
 }
 
 main{
-    display: flex; /*juntar los dos cuadros -responsive*/
+    display: flex; 
     background-color: #CFD1D1;
     padding: 1em 50px;
 }
+
+
 
 .captura{
     margin: 50px 50px;
@@ -39,8 +40,8 @@ main{
 
 .text-area {
     width: 95%;
+    margin-top: 5px;
     height: 15%;
-    margin: 0 0 5%;
     padding: 20px;
     border-radius: 15px;
     font-size: 25px;
@@ -53,43 +54,47 @@ main{
         outline: none;  
     }
 
-.mensaje{ 
+.mensaje {
     background: white;
+    font-size: 25px;
     background-image: url("imagenes/munheco.png");
     background-repeat: no-repeat;
     border: none;
     border-radius: 15px;
     color: #0A3871;
-    margin-left: 50px;
-    margin-top: 2px;
+    margin-left: 20px;
+    margin-top: 5px;
     padding-left: 50px;
-    position: fixed;
+    position: absolute;
 }
 
 .mensaje:focus {
     outline: none;
 }
 
-.aviso{
+.aviso {
     display: flex;
     color: #0A3871;
     font-size: medium;
+    font-weight: bold;
 }
 
 .botones{
-    display: flex; /*posicionar al lado*/
-    margin-top: 30px;
+    display: flex;
+    margin-top: 50px;
 }
 
 .btn-desencriptar {
-    background: #D8DFE8; 
+    background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 15px;
     color: #0A3871;
     cursor: pointer;
     height: 60px;
     margin-left: 30px;
-    width: 250px;
+    width: 200px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .btn-encriptar {
@@ -99,19 +104,24 @@ main{
     color: white;
     cursor: pointer;
     height: 60px;
-    width: 250px;
+    width: 200px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.copiar{
+.copiar {
     border: 1px solid #0A3871;
     border-radius: 15px;
     color: #0A3871;
     cursor: pointer;
     height: 60px;
-    margin-left: 60px;
-    margin-top: 376px;
+    margin-left: 30px;
+    margin-top: 320px;
     position: absolute;
-    width: 336px;
+    width: 25%;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
 }
 
 .informacion {
@@ -119,14 +129,23 @@ main{
     font-size: 18px;
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 15px;
     color: #474747;
     background-color: white;
-    padding: 5px;
+    padding: 15px;
+    font-weight: bold;
 }
 
-footer p{
-    padding: 8px;
+@media screen and (max-width:480px) {
+    body{
+        width: 100vw;
+    }
+    
+    main {
+        display: block;
+    }
+   
+
 }
