@@ -41,7 +41,6 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;
 }
 
-
 function btncopiar(){
     //document.getElementById("txtMsnDesencriptado").select;
     navigator.clipboard.writeText(document.getElementById("txtMsnDesencriptado").value);
@@ -49,4 +48,3 @@ function btncopiar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
 }
-
